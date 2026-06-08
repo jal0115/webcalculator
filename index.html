@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тооны Машин</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="display" value="0" readonly>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-c" onclick="clearAll()">C</button>
+                <button class="btn btn-fn" onclick="square()">X²</button>
+                <button class="btn btn-fn" onclick="sqrtFn()">√</button>
+                <button class="btn btn-del" onclick="del()">⌫</button>
+
+                <button class="btn btn-num" onclick="inp('7')">7</button>
+                <button class="btn btn-num" onclick="inp('8')">8</button>
+                <button class="btn btn-num" onclick="inp('9')">9</button>
+                <button class="btn btn-op" onclick="op('+')">+</button>
+
+                <button class="btn btn-num" onclick="inp('4')">4</button>
+                <button class="btn btn-num" onclick="inp('5')">5</button>
+                <button class="btn btn-num" onclick="inp('6')">6</button>
+                <button class="btn btn-op" onclick="op('*')">*</button>
+
+                <button class="btn btn-num" onclick="inp('1')">1</button>
+                <button class="btn btn-num" onclick="inp('2')">2</button>
+                <button class="btn btn-num" onclick="inp('3')">3</button>
+                <button class="btn btn-op" onclick="op('/')">/</button>
+
+                <button class="btn btn-num" onclick="inp('.')">.</button>
+                <button class="btn btn-num" onclick="inp('0')">0</button>
+                <button class="btn btn-pm" onclick="toggleSign()">+/-</button>
+                <button class="btn btn-eq" onclick="calc()">=</button>
+            </div>
+            <div class="bottom-row">
+                <button class="btn-wide" onclick="sqrtFn()">√</button>
+                <button class="btn-wide" onclick="reciprocal()">1/x</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

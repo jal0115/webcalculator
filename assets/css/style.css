@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: #dce8f0;
+    border-radius: 16px;
+    padding: 16px;
+    width: 260px;
+    border: 1px solid #b0c8d8;
+}
+
+.display {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.display input {
+    width: 100%;
+    height: 80px;
+    border: 2px solid #7aaabf;
+    border-radius: 8px;
+    background-color: #ffffff;
+    text-align: right;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #222;
+    padding: 0 12px;
+    outline: none;
+    cursor: default;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.btn {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 1px solid #aac4d4;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.15s, transform 0.1s;
+}
+
+.btn:hover {
+    filter: brightness(0.93);
+}
+
+.btn:active {
+    transform: scale(0.93);
+    filter: brightness(0.85);
+}
+
+.btn-num {
+    background-color: #ffffff;
+    color: #222;
+}
+
+.btn-op {
+    background-color: #5b9ab5;
+    color: #ffffff;
+    border-color: #4a88a2;
+}
+
+.btn-fn {
+    background-color: #89bdd3;
+    color: #ffffff;
+    border-color: #6aaac2;
+}
+
+.btn-c {
+    background-color: #9eabb3;
+    color: #ffffff;
+    border-color: #8a9aa4;
+}
+
+.btn-del {
+    background-color: #b0bec5;
+    color: #ffffff;
+    border-color: #90a4ae;
+}
+
+.btn-pm {
+    background-color: #89bdd3;
+    color: #ffffff;
+    border-color: #6aaac2;
+}
+
+.btn-eq {
+    background-color: #2e7da6;
+    color: #ffffff;
+    border-color: #1e6a90;
+}
+
+.bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.btn-wide {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #aac4d4;
+    border-radius: 28px;
+    background-color: #e4eef4;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.15s, transform 0.1s;
+}
+
+.btn-wide:hover {
+    background-color: #ccdde8;
+}
+
+.btn-wide:active {
+    transform: scale(0.97);
+    filter: brightness(0.88);
+}
