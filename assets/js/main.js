@@ -55,3 +55,31 @@ function calc() {
         display.value = 'Err';
     }
 }
+
+const btnClear = document.querySelector('.btn-c');
+const btnSquare = document.querySelector('.btn-sq');
+const btnMinus = document.querySelector('.btn-minus');
+const btnDel = document.querySelector('.btn-del');
+const btnPm = document.querySelector('.btn-pm');
+const btnEq = document.querySelector('.btn-eq');
+const btnSqrt = document.querySelector('.btn-sqrt');
+const btnRecip = document.querySelector('.btn-recip');
+const btnNums = document.querySelectorAll('.btn-num');
+const btnOps = document.querySelectorAll('.btn-op');
+
+btnClear.addEventListener('click', clearAll);
+btnSquare.addEventListener('click', square);
+btnMinus.addEventListener('click', () => appendValue('-'));
+btnDel.addEventListener('click', del);
+btnPm.addEventListener('click', toggleSign);
+btnEq.addEventListener('click', calc);
+btnSqrt.addEventListener('click', squareRoot);
+btnRecip.addEventListener('click', reciprocal);
+
+btnNums.forEach(btn => {
+    btn.addEventListener('click', () => appendValue(btn.textContent));
+});
+
+btnOps.forEach(btn => {
+    btn.addEventListener('click', () => appendValue(btn.textContent));
+});
